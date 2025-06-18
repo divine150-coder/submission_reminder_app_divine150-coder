@@ -22,8 +22,8 @@ Chinemerem, Shell Navigation, not submitted
 Chiagoziem, Git, submitted
 Divine, Shell Navigation, not submitted
 Anissa, Shell Basics, submitted
-Gihozo, Shell Basics, submitted
-Shakillah, Git, submitted
+Gihozo, Shell Basics, not submitted
+Shakillah, Git, not submitted
 BOF
 
 cat > app/reminder.sh << 'BOF'

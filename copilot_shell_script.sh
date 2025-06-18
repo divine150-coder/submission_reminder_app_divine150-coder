@@ -1,8 +1,10 @@
-#!bin/bash
-
+#!/bin/bash
 echo "Enter a new assignment"
-read new_assignment
+read -r new_assignment
 
-sed -i "s/^ASSIGNMENT=.*/ASSIGNMENT=$new_assignment/" submission_reminder_*/config/config.env
+CONFIG_FILE=$(echo submission_reminder_*/config/config.env)
+sed -i 's/^ASSIGNMENT=.*/ASSIGNMENT="'"$new_assignment"'"/' "$CONFIG_FILE"
 
+echo "Starting submission reminder app..."
 bash submission_reminder_*/startup.sh
+
