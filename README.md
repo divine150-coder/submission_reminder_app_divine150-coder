@@ -1,0 +1,1 @@
+"create_environment.sh builds submission_reminder_{YourName}, populates config/config.env, submissions.txt, scripts (reminder.sh, functions.sh, startup.sh), and grants .sh execution. copilot_shell_script.sh updates ASSIGNMENT in config.env via sed and reruns startup.sh. Follow a feature-branch → main merge workflow."
